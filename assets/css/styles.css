@@ -253,15 +253,16 @@ nav a{
     }
 
     .logo{
-        height: 300px;
+        min-height: 150px;
     }
     .somos-txt{
         margin: 20px;
     }
     #toggler{
-        top: 125px;
+        top: 50px;
     }
 }
+
 
 
 
