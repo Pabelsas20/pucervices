@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: #460762;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #9824A0;
+    border-radius: 3px;
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,.25));
+}
+
+h2{
+    z-index: 900;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #EDEDED;
+}
+  
+.hero{
+    background-color: #460762;
+    height: 100vh;
+}
+
+.logo img{
+    padding: 20px 0 0 50px;
+    width: 150px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 901;
+    transition: .5s;
+}
+.header-border{
+    border-bottom: 10px solid #9824A0;
+}
+.header-bg{
+    background-color: #460762;
+}
+
+nav{
+    padding-right: 100px;
+    font-size: 30px;
+}
+nav a{
+    margin: auto 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-txt{
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-size: 38px;
+    color: white;
+    margin-top: 100px;
+}
+
+.hero-img{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-right: 100px;
+}
+
+.hero-img img{
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 100px);
+}
+
+#blank{
+    height: 100vh;
+}
+  
+
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    border: solid 7px white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: .5s ease-in-out;
+}
+.hero-btn:hover{
+    border: #9824A0 solid 7px;
+    background-color: #9824A0;
+}
+
+.hero-space{
+    height: 10vh;
+}
+
+.divider1{
+    width: 100%;
+    height: 100px;
+    background-color: #460762;
+}
+.triangulo{
+    filter: drop-shadow(5px 5px 1px rgba(70, 7, 98, .25));
+    padding-bottom: 100px;
+}
+
+.tituloapartado{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1D0046;
+    text-align: center;
+    font-size: 60px;
+    filter: drop-shadow(4px 4px 0px rgba(70, 7, 98, .25));
+}
+
+.somos-txt{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 75px 200px;
+    text-align: justify;
+    color: #1D0046;
+}
+
+#somos{
+    background-image: url(../imgs/fondosomos.png);
+    padding-bottom: 200px;
+}
+
+@media (max-width: 1000px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #460762;
+        min-height: 100px;
+        z-index: 999;
+        margin-bottom: -2px;
+        max-height: 100px;
+    }
+    .logo img{
+        padding: 5px 0;
+        width: auto;
+        max-height: 50px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        background-color: #460762;
+        width: 100%;
+        border-bottom: 10px solid #9824A0;
+        transition: 1.5s;
+    }
+    #toggler{
+        position: fixed;
+        top: 35px;
+        right: 50px;
+        z-index: 1000;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 60px;
+        border: solid 5px #9824A0;
+        color: #9824A0;
+        background-color: #00000000;
+        font-weight: 900;
+    }
+
+    nav a{
+        width: 100%;
+        padding: 3vh 0;
+        margin: 0;
+        font-size: 50px;
+    }
+    nav a:hover{
+        background-color: #1D0046;
+    }
+    .hide{
+        border-bottom: 0;
+        transform: translateY(-100vh);
+    }
+    .header-border{
+        border: 0;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-txt{
+        width: 100%;
+        font-size: 6vw;
+    }
+    .hero-img{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        align-self: flex-end;
+    }
+    .hero-img img{
+        max-height: 50vh;
+        max-width: 90%;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #toggler{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    nav a{
+        font-size: 24px;
+    }
+
+    .logo{
+        height: 300px;
+    }
+    .somos-txt{
+        margin: 20px;
+    }
+}
+
+
+
+
+
+
